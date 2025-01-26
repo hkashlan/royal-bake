@@ -58,6 +58,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    position: relative;
 }
 .title .image h1{
     color:white;
@@ -71,5 +72,16 @@ html {
     margin: 0 auto;
     text-align: center;
     
+}
+@media (max-width:767px){
+  .title .image h1{
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: -70px;
+}
+.title p{
+  width: fit-content;
+}
 }
 /* end title */

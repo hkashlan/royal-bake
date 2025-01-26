@@ -35,6 +35,11 @@
         flex-wrap: nowrap;
     }
     .our-special .container .box{
-        
+        width:360px;
+        height:540px;
+    }
+    .our-special .container .box img{
+        width: 360px;
+        height:360px;
     }
 }
