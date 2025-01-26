@@ -1,1 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*start global */
+:root{
+    --main-p-color:#b8b8b8;
+    --oring-color:#ffcc33;
+    --top-margin-top:100px;
+    --bottom-marfint-bottom:100px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  body{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+  }
+/* end global */
+/* start title */
+
+.title .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.title .image h1{
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.title p{
+    color: var(--main-p-color);
+    font-size: 18px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+/* end title */
