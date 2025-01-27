@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-sadbar',
   imports: [],
   templateUrl: './sadbar.component.html',
-  styleUrl: './sadbar.component.css'
+  styleUrl: './sadbar.component.css',
 })
-export class SadbarComponent {
-
-}
+export class SadbarComponent {}

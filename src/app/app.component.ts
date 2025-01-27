@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HaderComponent } from "./shared/hader/hader.component";
-import { AboutComponent } from "./shared/about/about.component";
-import { SadbarComponent } from "./page/sadbar/sadbar.component";
+
+import { SadbarComponent } from './page/sadbar/sadbar.component';
+import { HaderComponent } from './shared/hader/hader.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HaderComponent, AboutComponent, SadbarComponent],
+  imports: [HaderComponent, SadbarComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'food';
