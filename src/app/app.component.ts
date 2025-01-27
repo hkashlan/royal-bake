@@ -7,7 +7,7 @@ import { HaderComponent } from './shared/hader/hader.component';
   selector: 'app-root',
   imports: [HaderComponent, SadbarComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'food';
