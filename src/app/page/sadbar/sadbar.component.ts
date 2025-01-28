@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './sadbar.component.html',
   styleUrl: './sadbar.component.scss',
 })
-export class SadbarComponent {}
+export class SadbarComponent {
+  plusamg() {}
+}

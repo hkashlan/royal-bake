@@ -8,8 +8,9 @@ describe('HaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HaderComponent],
-    }).compileComponents();
+      imports: [HaderComponent]
+    })
+    .compileComponents();
 
     fixture = TestBed.createComponent(HaderComponent);
     component = fixture.componentInstance;

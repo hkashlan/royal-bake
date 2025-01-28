@@ -1,0 +1,21 @@
+<div class="chef">
+    <div class="title">
+        <div class="image">
+            <img src="/bg-title.png" alt="">
+            <h1>OUR BEST CHEF </h1>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate cupiditate temporibus deserunt qui beatae omnis.</p>
+    </div>
+    <div class="container">
+        <div class="box" *ngFor="let nam of image">
+            <img src={{nam.img}} alt="">
+            <h3>{{nam.name}}</h3>
+            <p>{{nam.info}}</p>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
