@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-sadbar',
   imports: [],
   templateUrl: './sadbar.component.html',
-  styleUrl: './sadbar.component.css',
+  styleUrl: './sadbar.component.scss',
 })
 export class SadbarComponent {
   plusamg() {}
