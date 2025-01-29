@@ -1,0 +1,21 @@
+<div class="menu">
+    <div class="title">
+        <div class="image">
+            <img src="/bg-title.png" alt="">
+            <h1>OUR MENU </h1>
+        </div>
+    </div>
+    <div class="fliter">
+        <button>ALL</button>
+    </div>
+    <div class="container">
+        <div class="box" *ngFor="let nam of food">
+            <a href="{{nam.image}}">
+                <img src="{{nam.image}}" alt="">
+            </a>
+            <h3>{{nam.name}}</h3>
+            <p>{{nam.description}}</p>
+            <span>{{nam.price}}</span>
+        </div>
+    </div>
+</div>
