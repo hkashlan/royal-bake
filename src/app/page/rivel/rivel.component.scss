@@ -1,0 +1,21 @@
+.rivel {
+  margin-top: var(--top-margin-top);
+  margin-bottom: var(--bottom-marfint-bottom);
+  background-image: url(/bg-offer.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.rivel .container h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  padding: 50px 0;
+}
+.rivel .container button {
+  background-color: var(--oring-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}

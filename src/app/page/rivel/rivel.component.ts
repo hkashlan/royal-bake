@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-rivel',
   imports: [],
   templateUrl: './rivel.component.html',
-  styleUrl: './rivel.component.css'
+  styleUrl: './rivel.component.scss',
 })
-export class RivelComponent {
-
-}
+export class RivelComponent {}

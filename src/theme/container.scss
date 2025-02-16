@@ -1,0 +1,26 @@
+.container {
+  padding-inline: var(--container-padding);
+  margin-inline: auto;
+  width: 100%;
+}
+
+// Small
+@media (min-width: 768px) {
+  .container {
+    width: var(--container-max-width-sm);
+  }
+}
+
+// Medium
+@media (min-width: 992px) {
+  .container {
+    width: var(--container-max-width-md);
+  }
+}
+
+// Large
+@media (min-width: 1200px) {
+  .container {
+    width: var(--container-max-width-lg);
+  }
+}
