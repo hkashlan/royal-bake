@@ -1,0 +1,56 @@
+.content{
+    margin-top: var(--top-margin-top);
+    margin-bottom: var(-bottom-marfint-bottom);
+    position: relative;
+}
+.content .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (max-width:767px){
+    .content .container{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+.content .container .box{
+    padding: 30px;
+}
+.content .container .box div{
+    display: flex;
+}
+.content .container .box div i{
+    color: var(--oring-color);
+    margin-top: 30px;
+    font-size: 22px;
+    margin-right: 15px;
+}
+.content .container .box div h1{
+    color:white;
+    font-weight: bold;
+}
+.content .container .box  span{
+    color: var(--oring-color);
+    font-weight: bold;
+    font-size: 22px;
+}
+.content .container .box p{
+    color: var(--main-p-color);
+}
+.content .container .icon{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.content .container .icon a{
+    margin-right: 50px;
+}
+.content .container .icon a i{
+    color:var(--oring-color);
+    font-size: 22px;
+    transition: 0.3s;
+}
+.content .container .icon a i:hover{
+    color: var(--main-p-color);
+}

@@ -8,6 +8,7 @@ import { HaderComponent } from './shared/hader/hader.component';
 import { MenuComponent } from "./page/menu/menu.component";
 import { GalleryComponent } from "./page/gallery/gallery.component";
 import { FormComponent } from "./page/form/form.component";
+import { ContentComponent } from "./page/content/content.component";
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { FormComponent } from "./page/form/form.component";
     ChefComponent,
     MenuComponent,
     GalleryComponent,
-    FormComponent
+    FormComponent,
+    ContentComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
