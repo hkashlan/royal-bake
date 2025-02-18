@@ -10,17 +10,13 @@
     </p>
   </div>
   <div class="container">
-    <div class="box">
-      <img src="/special.jpg" alt="" />
-      <h3>PASTA</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est.</p>
-      <span>$11.30</span>
-    </div>
-    <div class="box">
-      <img src="/special.jpg" alt="" />
-      <h3>PASTA</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est.</p>
-      <span>$11.30</span>
-    </div>
+    @for (slide of slides; track $index) {
+      <div class="box">
+        <img [src]="slide.img" alt="" />
+        <h3>{{ slide.title }}</h3>
+        <p>{{ slide.info }}</p>
+        <span>{{ slide.price }}</span>
+      </div>
+    }
   </div>
 </div>

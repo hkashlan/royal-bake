@@ -1,0 +1,32 @@
+@use 'index2' as theme;
+
+.chef {
+  margin-top: var(--top-margin-top);
+  margin-bottom: var(--bottom-marfint-bottom);
+}
+.chef .container {
+  margin-top: theme.$top-margin-top;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.chef .container .box {
+  text-align: center;
+}
+.chef .container .box img {
+  width: 275px;
+  height: 350px;
+}
+.chef .container .box h3 {
+  color: white;
+  font-weight: bold;
+}
+.chef .container .box p {
+  color: theme.$main-p-color;
+}
+@media (max-width: 767px) {
+  .chef .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

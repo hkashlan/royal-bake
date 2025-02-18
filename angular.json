@@ -25,8 +25,13 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.scss",
-          "node_modules/@fortawesome/fontawesome-free/css/all.min.css"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/theme"]
+            },
+            "styles": [
+              "src/styles.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+            ],
             "scripts": []
           },
           "configurations": {
