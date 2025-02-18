@@ -12,12 +12,12 @@ import Swiper from 'swiper';
 
 
 @Component({
-  selector: 'app-sadbar',
+  selector: 'app-side-bar',
   imports: [],
-  templateUrl: './sadbar.component.html',
-  styleUrl: './sadbar.component.scss',
+  templateUrl: './side-bar.component.html',
+  styleUrl: './side-bar.component.scss',
 })
-export class SadbarComponent implements OnInit{
+export class SideBarComponent implements OnInit{
   @ViewChild('swiperContainer', { static: true }) swiperRef!: Swiper;
 
   swiper!: Swiper
@@ -61,7 +61,7 @@ export class SadbarComponent implements OnInit{
 
   ngOnInit() {
     this.swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 30,
       loop: true,
       pagination: {
