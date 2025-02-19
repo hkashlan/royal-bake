@@ -9,6 +9,8 @@ import { MenuComponent } from './page/menu/menu.component';
 import { RivelComponent } from './page/rivel/rivel.component';
 import { SideBarComponent } from './page/side-bar/side-bar.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { GpsComponent } from "./page/gps/gps.component";
+import { FooterComponent } from "./page/footer/footer.component";
 
 @Component({
   selector: 'app-root',
@@ -22,7 +24,9 @@ import { HeaderComponent } from './shared/header/header.component';
     GalleryComponent,
     FormComponent,
     ContentComponent,
-  ],
+    GpsComponent,
+    FooterComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
