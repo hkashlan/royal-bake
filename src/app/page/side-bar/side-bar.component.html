@@ -1,0 +1,39 @@
+<div class="our-special">
+  <div class="title">
+    <div class="image">
+      <img src="/bg-title.png" alt="" />
+      <h1>OUR SPECIAL DISHES</h1>
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+      cupiditate temporibus deserunt qui beatae omnis.
+    </p>
+  </div>
+  <div class="container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        @for (slide of slides; track $index) {
+          <div class="swiper-slide">
+            <div class="box">
+              <img [src]="slide.img" alt="" />
+              <h3>{{ slide.title }}</h3>
+              <p>{{ slide.info }}</p>
+              <span>{{ slide.price }}</span>
+            </div>
+          </div>
+        }
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+      </div>
+    </div>
+
+    @for (slide of slides; track $index) {}
+  </div>
+</div>

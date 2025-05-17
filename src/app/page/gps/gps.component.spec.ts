@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SadbarComponent } from './sadbar.component';
+import { GpsComponent } from './gps.component';
 
-describe('SadbarComponent', () => {
-  let component: SadbarComponent;
-  let fixture: ComponentFixture<SadbarComponent>;
+describe('GpsComponent', () => {
+  let component: GpsComponent;
+  let fixture: ComponentFixture<GpsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SadbarComponent]
+      imports: [GpsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SadbarComponent);
+    fixture = TestBed.createComponent(GpsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

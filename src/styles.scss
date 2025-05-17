@@ -1,5 +1,8 @@
 @use './theme/title.scss';
 @use './theme/container.scss';
+// import Swiper styles
+// @use 'swiper/css';
+@use 'swiper/swiper-bundle.min.css';
 
 :root {
   --main-p-color: #b8b8b8;

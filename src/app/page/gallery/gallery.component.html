@@ -1,0 +1,15 @@
+<div class="gallery">
+    <div class="title">
+        <div class="image">
+            <img src="/bg-title.png" alt="">
+            <h1>GALLERY</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" *ngFor="let nam of gallery">
+            <a href="{{nam.image}}">
+            <img src="{{nam.image}}" alt="">
+            </a>
+        </div>
+    </div>
+</div>
