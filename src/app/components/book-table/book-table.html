@@ -1,0 +1,77 @@
+<!-- ====== Booking Table ====== -->
+<section
+  id="booking-table"
+  style="background-image: url('images/bg-pattern.jpg')"
+>
+  <div class="title-center">
+    <h2>Book a table</h2>
+  </div>
+  <!--/.title-center-->
+  <div class="wrapper flex-row wrapp-booking-form">
+    <div class="booking-form">
+      <form method="POST">
+        <div class="wrapp-input-group flex-row">
+          <div>
+            <p><label for="name">Name</label></p>
+            <input type="text" placeholder="Name" id="name" name="name" />
+          </div>
+          <div>
+            <p><label for="lastname">Last Name</label></p>
+            <input
+              type="text"
+              placeholder="Last Name"
+              id="lastname"
+              name="lastname"
+            />
+          </div>
+          <div>
+            <p><label for="phone">Phone</label></p>
+            <input type="tel" placeholder="Phone" id="phone" name="phone" />
+          </div>
+          <div>
+            <p><label for="email">Email</label></p>
+            <input type="email" placeholder="Email" id="email" name="email" />
+          </div>
+          <div>
+            <p><label for="date">Date</label></p>
+            <input type="text" placeholder="mm-dd-yy" id="date" name="dates" />
+          </div>
+          <div>
+            <p><label for="time">Time</label></p>
+            <input type="text" placeholder="12:00 AM" id="time" name="times" />
+          </div>
+          <button type="submit" id="send" class="btn">Book a table</button>
+        </div>
+        <!--/.wrapp-input-group-->
+        <p class="result"></p>
+      </form>
+    </div>
+    <!--/.booking-form-->
+    <div class="working-hours">
+      <h3>Opening Hours</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, inventore
+        hic nulla, provident laudantium voluptate ipsa eligendi commodi mollitia
+        vero animi, repudiandae quidem minima est sint sapiente quas iure
+        deleniti.
+      </p>
+      <div class="flex-row table-hours">
+        <p>Monday - Friday</p>
+        <p>8AM - 6PM</p>
+      </div>
+      <!--/.table-hours-->
+      <div class="flex-row table-hours">
+        <p>Saturday</p>
+        <p>9AM - 5PM</p>
+      </div>
+      <!--/.table-hours-->
+      <div class="flex-row table-hours">
+        <p>Sunday</p>
+        <p>9AM - 4PM</p>
+      </div>
+    </div>
+    <!--/.working-hours-->
+  </div>
+  <!--/.wrapp-booking-form-->
+</section>
+<!-- ====== End Booking Table ====== -->
