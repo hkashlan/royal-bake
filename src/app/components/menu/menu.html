@@ -7,315 +7,51 @@
   <div class="wrapper flex-row wrapp-menu">
     <ul class="list-menu">
       <li><a href="#">All</a></li>
-      <li><a href="#">Burgers</a></li>
-      <li><a href="#">Pizzas</a></li>
-      <li><a href="#">Steaks</a></li>
-      <li><a href="#">Pasts</a></li>
-      <li><a href="#">Salads</a></li>
-      <li><a href="#">Deserts</a></li>
-      <li><a href="#">Drinks</a></li>
+      @for (menu of menus; track menu.label) {
+      <li>
+        <a href="#"> {{ menu.label }} </a>
+      </li>
+
+      }
     </ul>
   </div>
   <!--/.wrapp-menu-->
   <div class="wrapper wrapp-menu-item">
-    <div class="menu-item flex-row zoom-gallery">
-      <div class="single-menu-item">
-        <a href="images/product-1.jpg"
-          ><img src="images/product-1.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Double Cheese Pizza</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$15.30</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-2.jpg"
-          ><img src="images/product-2.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Seafood</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$23.99</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-3.png"
-          ><img src="images/product-3.png" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Double mac burger</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$13.80</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-4.jpg"
-          ><img src="images/product-4.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Pasta</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$16.99</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-5.jpg"
-          ><img src="images/product-5.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Beef cheese burger</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$11.50</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-6.jpg"
-          ><img src="images/product-6.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Grand italiano pizza</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$21.30</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-7.jpg"
-          ><img src="images/product-7.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Lemonade</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$5.00</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-8.jpg"
-          ><img src="images/product-8.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Chicken burger</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$14.35</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-    </div>
+    @for (menu of menus; track menu.label) {
     <!--/.menu-item-->
     <div class="menu-item flex-row zoom-gallery">
+      @for (item of menu.items; track item.label) {
       <div class="single-menu-item">
-        <a href="images/product-8.jpg"
-          ><img src="images/product-8.jpg" alt=""
+        <a [href]="item.picture || 'images/product-8.jpg'"
+          ><img [src]="item.picture || 'images/product-8.jpg'" alt=""
         /></a>
         <div class="single-menu-item-content">
-          <h3>Chicken burger</h3>
+          <h3>{{ item.label }}</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$14.35</p>
+          <p class="price">{{item.price}}</p>
         </div>
       </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-5.jpg"
-          ><img src="images/product-5.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Beef cheese burger</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$11.50</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-3.png"
-          ><img src="images/product-3.png" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Double mac burger</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$13.80</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
+      }
     </div>
-    <!--/.menu-item-->
-    <div class="menu-item flex-row zoom-gallery">
-      <div class="single-menu-item">
-        <a href="images/product-6.jpg"
-          ><img src="images/product-6.jpg" alt=""
+    }
+    @for (menu of menus; track menu.label) {
+      @for (item of menu.items; track item.label) {
+          <!--/.menu-item-->
+          <div class="menu-item flex-row zoom-gallery">
+        <div class="single-menu-item">
+          <a [href]="item.picture || 'images/product-8.jpg'"
+          ><img [src]="item.picture || 'images/product-8.jpg'" alt=""
         /></a>
-        <div class="single-menu-item-content">
-          <h3>Grand italiano pizza</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$21.30</p>
+          <div class="single-menu-item-content">
+            <h3>{{ item.label }}</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
+            <p class="price">{{item.price}}</p>
+          </div>
         </div>
       </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-1.jpg"
-          ><img src="images/product-1.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Double Cheese Pizza</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$15.30</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-    </div>
-    <!--/.menu-item-->
-    <div class="menu-item flex-row zoom-gallery">
-      <div class="single-menu-item">
-        <a href="images/product-5.jpg"
-          ><img src="images/product-5.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Beef cheese burger</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$11.50</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-6.jpg"
-          ><img src="images/product-6.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Grand italiano pizza</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$21.30</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-7.jpg"
-          ><img src="images/product-7.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Lemonade</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$5.00</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-8.jpg"
-          ><img src="images/product-8.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Chicken burger</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$14.35</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-    </div>
-    <!--/.menu-item-->
-    <div class="menu-item flex-row zoom-gallery">
-      <div class="single-menu-item">
-        <a href="images/product-4.jpg"
-          ><img src="images/product-4.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Pasta</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$16.99</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-    </div>
-    <!--/.menu-item-->
-    <div class="menu-item flex-row zoom-gallery">
-      <div class="single-menu-item">
-        <a href="images/product-4.jpg"
-          ><img src="images/product-4.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Pasta</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$16.99</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-8.jpg"
-          ><img src="images/product-8.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Chicken burger</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$14.35</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-5.jpg"
-          ><img src="images/product-5.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Beef cheese burger</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$11.50</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-3.png"
-          ><img src="images/product-3.png" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Double mac burger</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$13.80</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-    </div>
-    <!--/.menu-item-->
-    <div class="menu-item flex-row zoom-gallery">
-      <div class="single-menu-item">
-        <a href="images/product-4.jpg"
-          ><img src="images/product-4.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Pasta</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$16.99</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-      <div class="single-menu-item">
-        <a href="images/product-3.png"
-          ><img src="images/product-3.png" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Double mac burger</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$13.80</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-    </div>
-    <!--/.menu-item-->
-    <div class="menu-item flex-row zoom-gallery">
-      <div class="single-menu-item">
-        <a href="images/product-7.jpg"
-          ><img src="images/product-7.jpg" alt=""
-        /></a>
-        <div class="single-menu-item-content">
-          <h3>Lemonade</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-          <p class="price">$5.00</p>
-        </div>
-      </div>
-      <!--/.single-menu-item-->
-    </div>
+        }
+    }
+
     <!--/.menu-item-->
   </div>
   <!--/.wrapp-menu-item-->
