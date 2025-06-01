@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:royal-bake": "node dist/royal-bake/server/server.mjs"
+    "serve:ssr:royal-bake": "node dist/royal-bake/server/server.mjs",
+    "local": "npx http-server dist/royal-bake/browser -p 4000"
   },
   "private": true,
   "dependencies": {
