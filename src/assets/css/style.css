@@ -252,7 +252,7 @@ button {
 .special-dishes-content p,
 #chefs .title-center p,
 .wrapper.flex-row .about-content p,
- #special-dishes .title-center p,
+ #special-dishes .title-center,
 .wrapper.flex-row .chefs-item .about-chefs p,
 .about-chefs .chef-social li a:hover,
 .single-menu-item-content p,
